@@ -7,10 +7,12 @@
 <h3 class="talk-page-subtitle">
     {{ page.date }} <span class="date">&#8211; {{ page.extra.venue }} </span>
     {% if page.extra.website %}
-        <a href="{{ page.extra.website | safe }}" style="white-space: nowrap">
-            (<i class="fas fa-link"></i>
-            Website)
-        </a>
+        <div>
+            <a href="{{ page.extra.website | safe }}" style="white-space: nowrap">
+                <i class="fas fa-link"></i>
+                Website
+            </a>
+        </div>
     {% endif %}
 </h3>
 

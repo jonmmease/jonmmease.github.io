@@ -170,6 +170,7 @@ header {
     color: #ddd;
 
     ul {
+      padding: 0;
       list-style-type: none;
       display: inline-block;
       float: right;
@@ -255,11 +256,6 @@ header {
   color: $subdued-font;
   font-weight: 300;
   white-space: nowrap;
-  //font-family: "Ubuntu";
-}
-
-.talk-page-text {
-  //max-width: calc(#{$container-width} * 0.75);
 }
 
 .talk-page-title {
@@ -270,6 +266,8 @@ header {
 .talk-page-subtitle {
   text-align: center;
   margin-right: 16px;
+  line-height: 1.5em;
+  margin-bottom: 0;
 }
 
 .youtube-container {
@@ -323,8 +321,7 @@ header {
 }
 
 .blog-p {
-  margin-top: 0px;
-  line-height: 2em;
+  margin-top: 4px;
   font-size: 1.1em;
 
 }
