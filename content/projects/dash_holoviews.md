@@ -11,7 +11,7 @@ post = "https://medium.com/plotly/introducing-dash-holoviews-6a05c088ebe5"
 featured = true
 +++
 
-I developed the majority of the Plotly backend for the HoloViews python library.
+I developed the majority of the Plotly backend for the HoloViews Python library.
 Later, I added support for integrating interactive HoloViews visualizations into 
 Dash apps.
 
