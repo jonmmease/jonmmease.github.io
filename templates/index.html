@@ -112,7 +112,7 @@
     {% if page.extra.featured %}
     <li>
         <a href="{{ page.path | safe }}">  {{ page.title }} </a>
-        <span class="talk-venue"> ({{ page.date | date(format="%Y-%m") }}) </span>
+        <span class="date"> &nbsp;&nbsp; {{ page.date | date(format="%Y-%m") }} </span>
     </li>
     {% endif %}
     {% endfor %}
@@ -137,7 +137,7 @@
     {% if page.extra.featured %}
     <li>
         <a href="{{ page.path | safe }}">  {{ page.title }} </a>
-        <span class="talk-venue"> ({{ page.extra.venue }} &#8211; {{ page.date | date(format="%Y-%m") }}) </span>
+        <span class="date"> &nbsp;&nbsp; {{ page.extra.venue }} &#8211; {{ page.date | date(format="%Y-%m") }} </span>
     </li>
     {% endif %}
     {% endfor %}

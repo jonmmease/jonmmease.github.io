@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
+<h1>
     {{ section.title }}
 </h1>
 <p>{{ section.content | safe }}</p>
@@ -20,7 +20,7 @@
         </h2>
 
         <p>
-            <span class="talk-venue", style="white-space: nowrap">({{ page.date | date(format="%Y-%m-%d")}} &#8211; {{ page.extra.venue }})</span>
+            <span class="date", style="white-space: nowrap">{{ page.date | date(format="%Y-%m-%d")}} &#8211; {{ page.extra.venue }}</span>
         </p>
     </div>
 </div>

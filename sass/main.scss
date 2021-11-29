@@ -12,15 +12,15 @@ $background-color: #FFF;  // White
 $footer-color: #F5F5F5;  // Grey 200
 $border-color: #ddd;
 $hr-color: #E0E0E0;  // Grey 300
-$default-text-color: #424242;  // Grey 800
-$heading-color: #212121;  // Grey 900
-$subdued-font: #78909C; // Blue Grey 400
+$default-text-color: #212121;  // Grey 900
+$heading-color: #000;  // Black
+$subdued-font: #607d8b; // Blue Grey 500
 
 /* Basic */
 html {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Dosis", sans-serif;
   text-rendering: optimizeLegibility;
-  line-height: 1.5em;
+  font-size: 1.1em;
 
   color: $default-text-color;
   background-color: $background-color;
@@ -49,7 +49,7 @@ body {
 
 .navbar-item {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.2em;
   color: $light-font;
 
@@ -82,11 +82,15 @@ a:active {
 h1, h2, h3, h4, h5, h6 {
   margin-left: 16px;
   color: $heading-color;
-  font-weight: normal;
+  font-weight: 500;
+  //font-weight: normal;
 }
 
 p {
   margin-left: 16px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 18px;
 }
 
 h1 {
@@ -117,13 +121,13 @@ hr {
 .site-home {
   text-decoration: none;
   color: black;
-  font-weight: normal;
-  font-family: "Contrail One", sans-serif;
+  font-weight: 500;
+  //font-family: "Contrail One", sans-serif;
   font-size: 2em;
 
   white-space: nowrap;
-  margin-top: 0.5em;
-  margin-bottom: 0;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 
   a:hover,
   a:focus,
@@ -188,6 +192,8 @@ header {
 // Main page profile
 .title {
   margin-left: 16px;
+  margin-top: 16px;
+  margin-bottom: 0px;
   font-size: 1.5em;
   font-weight: normal;
   color: black;
@@ -245,10 +251,11 @@ header {
   //flex-shrink: 1;
 }
 
-.talk-venue {
+.date {
   color: $subdued-font;
-  font-weight: normal;
+  font-weight: 300;
   white-space: nowrap;
+  //font-family: "Ubuntu";
 }
 
 .talk-page-text {
@@ -291,9 +298,16 @@ header {
 
 .blog-title {
   margin-left: 16px;
-  margin-top: 0px;
+  //margin-top: 0px;
   font-size: 1.3em;
-  //line-height: 1.3em;
+  font-weight: 500;
+}
+
+.blog-page-title {
+  margin-left: 16px;
+  margin-top: 0px;
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
 .blogs-container {
@@ -305,11 +319,7 @@ header {
 
 .blog-date {
   margin-left: 16px;
-  font-size: 1.3em;
-  white-space: nowrap;
-  //line-height: 1.3em;
-  font-weight: normal;
-  color: $subdued-font;
+  font-size: 1.2em;
 }
 
 .blog-p {
@@ -355,12 +365,11 @@ header {
 .project-text {
   flex-basis: 300px;
   flex-grow: 1;
-  //flex-shrink: 1;
 }
 
 .project-social {
   font-size: 0.9em;
-  margin: 16px;
+  margin: 8px 12px;
   white-space: nowrap;
 }
 
@@ -368,7 +377,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  //align-content: center;
   margin-bottom: 0;
   margin-left: 16px;
 }
@@ -444,6 +452,7 @@ header {
 .featured-project-title {
   margin: 0 0 8px 16px;
   font-size: 1.2em;
+  font-weight: 500;
 }
 
 
@@ -500,16 +509,17 @@ header {
   h1 {
     //color: red;
     font-size: x-large;
-    font-weight: normal;
+    font-weight: 600;
     color: #000;
   }
 
   h2 {
     //color: green;
     color: #444;
-    font-size: larger;
+    //font-size: larger;
     margin-left: 32px;
-    font-weight: normal;
+    font-weight: 500;
+    //font-weight: normal;
   }
 
   strong {

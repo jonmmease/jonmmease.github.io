@@ -15,40 +15,40 @@ previously the Chief Scientist at Plotly.
 # Work Experience
 
 ## The Johns Hopkins University Applied Physics Laboratory
-**Data Scientist and Software Developer** (August 2009 - present)
+**Data Scientist and Software Developer** <span class="date">&nbsp;&nbsp; August 2009 - present</span>
 
 Responsibilities include introducing and building Open Data Science competency
 within the group through research, development, training, and open source engagement.
 
 ## Plotly Technologies
-**Chief Scientist** (May 2020 - September 2021)
+**Chief Scientist** <span class="date">&nbsp;&nbsp; May 2020 - September 2021</span>
 
 Contributed to plotly's existing open source projects, including plotly.py, plotly.js, 
 and Dash. Lead the development of several new libraries including Jupyter Dash,
 Kaleido, and Dash HoloViews. Advised Plotly leadership on the strategic direction of 
 plotly's open source portfolio. 
 
-**Open Source Maintainer** (August 2018 – April 2020)
+**Open Source Maintainer** <span class="date">&nbsp;&nbsp; August 2018 – April 2020</span>
 
 Open source maintainer and lead developer for plotly.py, 
 the Plotly Python data visualization library. 
 
 ## Anaconda, Inc.
 
-**Open Source Developer** (June 2019 – February 2020)
+**Open Source Developer** <span class="date"> &nbsp;&nbsp; June 2019 – February 2020</date>
 
 Contributed to Datashader, Panel, Holoviews, and developed spatialpandas.
 
 ## Millersville University of Pennsylvania
 
-**Research Assistant** (May 2008 – May 2009)
+**Research Assistant** <span class="date">&nbsp;&nbsp; May 2008 – May 2009</span>
 
 Developed a haptic neurosurgical bone drilling simulator including the development
 of the graphical environment (using the OpenSceneGraph C++ toolkit) and the haptic
 rendering algorithms (using the OpenHaptics C++ toolkit for the Phantom Omni).
 
 ## West Virginia University
-**WVNano REU Program Participant** (June 2007 – July 2007)
+**WVNano REU Program Participant** <span class="date">&nbsp;&nbsp; June 2007 – July 2007</span>
 
 Collaborated with the Traveling Wave Electrophoresis research group, Department 
 of Physics, West Virginia University. Performed computational analysis 
