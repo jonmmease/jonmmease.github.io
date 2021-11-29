@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+    {{ section.title }}
+</h1>
+<p>{{ section.content | safe }}</p>
+
+    {% for page in section.pages | reverse %}
+    <div class="project-container">
+        {% set image = resize_image(path=page.extra.thumbnail, width=400, op='fit_width') %}
+        <div class="project-image-container">
+            <a href="{{ page.permalink | safe }}">
+                <div class="project-image" style="background-image: url('{{ image.url }}')"> </div>
+            </a>
+        </div>
+        <div class="project-text">
+            <h2>
+            <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+            </h2>
+            <p>
+                {{ page.summary | safe}}
+            </p>
+            <div style="display: flex; flex-direction: row">
+                {% if page.extra.github %}
+                <p class="project-social">
+                    <a href="{{ page.extra.github | safe }}">
+                        <i class="fab fa-github"></i>
+                        Github
+                    </a>
+                </p>
+                {% endif %}
+                {% if page.extra.website %}
+                <p class="project-social">
+                    <a href="{{ page.extra.website | safe }}">
+                        <i class="fas fa-link"></i>
+                        Website
+                    </a>
+                </p>
+                {% endif %}
+                {% if page.extra.post %}
+                <p class="project-social">
+                    <a href="{{ page.extra.post | safe }}">
+                        <i class="fas fa-blog"></i>
+                        Blog
+                    </a>
+                </p>
+                {% endif %}
+                {% if page.extra.paper %}
+                <p class="project-social">
+                    <a href="{{ page.extra.paper | safe }}">
+                        <i class="fas fa-file-pdf"></i>
+                        Paper
+                    </a>
+                </p>
+                {% endif %}
+                {% if page.extra.youtube %}
+                <p class="project-social">
+                    <a href="https://www.youtube.com/watch?v={{ page.extra.youtube | safe }}">
+                        <i class="fas fa-video"></i>
+                        Video
+                    </a>
+                </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% if not loop.last %}
+    <hr>
+    {% endif %}
+    {% endfor %}
+
+{% endblock content %}
+
+{% block title %}
+Projects
+{% endblock title %}

@@ -1,0 +1,13 @@
+Generated with https://favicon.io/favicon-generator/
+
+Initials: JM
+Font Size: 100
+background color: #1A237E (Indigo 900)
+font color: #FAFAFA (Grey 50)
+
+This favicon was generated using the following font:
+
+- Font Title: Contrail One
+- Font Author: Copyright (c) 2011, Sorkin Type Co (www.sorkintype.com) with Reserved Font Names "Contrail" and "Contrail One".
+- Font Source: http://fonts.gstatic.com/s/contrailone/v10/eLGbP-j_JA-kG0_Zo51noafdZUvt_c092w.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

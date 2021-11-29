@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Profile -->
+<div class="profile-container">
+    <div>
+        <div class="profile-photo-container">
+            {% set image = resize_image(path="/index/BioPhoto-JonMease.jpg", width=200, op='fit_width') %}
+            <img src="{{ image.url }}" class="profile-photo">
+        </div>
+        <table class="social-table">
+            <tr>
+                <td>
+                    <a href="https://twitter.com/jonmmease/" style="white-space: nowrap">
+                        <i class="fab fa-twitter"></i>
+                        Twitter
+                    </a>
+                </td>
+                <td>
+                    <a href="https://github.com/jonmmease/" style="white-space: nowrap">
+                        <i class="fab fa-github"></i>
+                        Github
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="mailto:jonmmease@gmail.com" style="white-space: nowrap">
+                        <i class="fas fa-envelope"></i>
+                        Email
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.linkedin.com/in/jon-mease/" style="white-space: nowrap">
+                        <i class="fab fa-linkedin"></i>
+                        Linkedin
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+        <div class="profile-paragraphs">
+        <h1 class="title">
+            Hi, I'm Jon Mease
+        </h1>
+
+        <p>
+            I care deeply about the future of the open data science technology ecosystem,
+            I’m a contributor to a variety of open source data science projects, and I was
+            formerly the Chief Scientist at Plotly.
+        </p>
+        <p>
+            I hold a Master’s Degree in Computer Science from Johns Hopkins University, and
+            Bachelor's degrees in Mathematics and Physics from Millersville University.
+        </p>
+        <p>
+            For more information on my background, see my <a href="/cv">CV</a>.
+        </p>
+    </div>
+</div>
+
+<hr>
+
+<!-- Featured Projects -->
+<h2>
+    Featured Projects
+</h2>
+{% set section = get_section(path="projects/_index.md") %}
+
+<div class="featured-projects-grid">
+    {% for page in section.pages | reverse %}
+    {% if page.extra.featured %}
+    <div class="featured-project-container">
+        {% set image = resize_image(path=page.extra.thumbnail, width=400, op='fit_width') %}
+        <div class="featured-project-image-container">
+            <a href="{{ page.permalink | safe }}">
+                <span class="project-image featured" style="background-image: url('{{ image.url }}')"> </span>
+            </a>
+        </div>
+        <div>
+            <div>
+                <div class="featured-project-title">
+                   <a href="{{ page.permalink | safe }}">{{ page.title | safe}}</a>
+                </div>
+                <div class="featured-project-text">
+                    {{ page.summary | safe}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endif %}
+    {% endfor %}
+</div>
+
+<div class="more-button-container">
+    <a href="./projects" class="more-link">
+        <div class="more-button">More</div>
+    </a>
+</div>
+
+<hr>
+
+<!-- Featured Blog Posts -->
+<h2>
+    Featured Blog Posts
+</h2>
+
+<ul class="featured-ul">
+    {% set section = get_section(path="blog/_index.md") %}
+    {% for page in section.pages %}
+    {% if page.extra.featured %}
+    <li>
+        <a href="{{ page.path | safe }}">  {{ page.title }} </a>
+        <span class="talk-venue"> ({{ page.date | date(format="%Y-%m") }}) </span>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
+
+<div class="more-button-container">
+    <a href="./blog" class="more-link">
+        <div class="more-button">More</div>
+    </a>
+</div>
+
+<hr>
+
+<!-- Featured Talks -->
+<h2>
+    Featured Talks
+</h2>
+
+<ul class="featured-ul">
+    {% set section = get_section(path="talks/_index.md") %}
+    {% for page in section.pages %}
+    {% if page.extra.featured %}
+    <li>
+        <a href="{{ page.path | safe }}">  {{ page.title }} </a>
+        <span class="talk-venue"> ({{ page.extra.venue }} &#8211; {{ page.date | date(format="%Y-%m") }}) </span>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
+
+<div class="more-button-container">
+    <a href="./talks" class="more-link">
+        <div class="more-button">More</div>
+    </a>
+</div>
+
+{% endblock content %}
+
+{% block title %}
+Home
+{% endblock title %}

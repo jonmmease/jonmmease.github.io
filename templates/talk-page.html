@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="talk-page-title">
+    {{ page.title }}
+</h1>
+<h3 class="talk-page-subtitle">
+    {{ page.date }} <span class="talk-venue">&#8211; {{ page.extra.venue }} </span>
+    {% if page.extra.website %}
+        <a href="{{ page.extra.website | safe }}" style="white-space: nowrap">
+            (<i class="fas fa-link"></i>
+            Website)
+        </a>
+    {% endif %}
+</h3>
+
+{% if page.extra.youtube %}
+
+<div class="youtube-container">
+    <div class="youtube">
+        <iframe
+                src="https://www.youtube.com/embed/{{page.extra.youtube}}"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowfullscreen
+        ></iframe>
+    </div>
+</div>
+{% endif %}
+
+<div class="talk-page-text">
+    {{ page.content | safe }}
+</div>
+
+{% endblock content %}
+
+{% block title %}
+Talks
+{% endblock title %}

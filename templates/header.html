@@ -1,0 +1,47 @@
+<header>
+    <div class="header-container">
+        <h1 class="site-home">
+            <a href=" {{ config.base_url }}"> Jon Mease </a>
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/projects/"
+                       {% if current_url is starting_with(config.base_url ~ "/projects")%}
+                    class="navbar-item active"
+                    {% else %}
+                    class="navbar-item"
+                    {% endif %}
+                    >Projects</a>
+                </li>
+                <li>
+                    <a href="/blog/"
+                       {% if current_url is starting_with(config.base_url ~ "/blog")%}
+                    class="navbar-item active"
+                    {% else %}
+                    class="navbar-item"
+                    {% endif %}
+                    >Blog</a>
+                </li>
+                <li>
+                    <a href="/talks/"
+                       {% if current_url is starting_with(config.base_url ~ "/talks")%}
+                    class="navbar-item active"
+                    {% else %}
+                    class="navbar-item"
+                    {% endif %}
+                    >Talks</a>
+                </li>
+                <li>
+                    <a href="/cv/"
+                       {% if current_url is starting_with(config.base_url ~ "/cv")%}
+                    class="navbar-item active"
+                    {% else %}
+                    class="navbar-item"
+                    {% endif %}
+                    >CV</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

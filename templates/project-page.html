@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="project-page-title">
+    {{ page.title }}
+</h1>
+
+<div class="project-page-image-container">
+    <img src="{{page.extra.thumbnail}}" class="project-page-image" style="object-fit: contain">
+    <div class="project-page-social-container">
+        {% if page.extra.github %}
+        <div class="project-social">
+            <a href="{{ page.extra.github | safe }}">
+                <i class="fab fa-github"></i>
+                Github
+            </a>
+        </div>
+        {% endif %}
+        {% if page.extra.website %}
+        <div class="project-social">
+            <a href="{{ page.extra.website | safe }}">
+                <i class="fas fa-link"></i>
+                Website
+            </a>
+        </div>
+        {% endif %}
+        {% if page.extra.post %}
+        <div class="project-social">
+            <a href="{{ page.extra.post | safe }}">
+                <i class="fas fa-blog"></i>
+                Blog
+            </a>
+        </div>
+        {% endif %}
+        {% if page.extra.paper %}
+        <div class="project-social">
+            <a href="{{ page.extra.paper | safe }}">
+                <i class="fas fa-file-pdf"></i>
+                Paper
+            </a>
+        </div>
+        {% endif %}
+        {% if page.extra.youtube %}
+        <div class="project-social">
+            <a href="https://www.youtube.com/watch?v={{ page.extra.youtube | safe }}">
+                <i class="fas fa-video"></i>
+                Video
+            </a>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="project-page-text">
+        {{ page.content | safe }}
+    </div>
+</div>
+
+
+{% endblock content %}
+
+{% block title %}
+Projects
+{% endblock title %}

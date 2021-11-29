@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+    {{ section.title }}
+</h1>
+<p>{{ section.content | safe }}</p>
+{% for page in section.pages %}
+
+<div class="talk-container">
+    <div class="talk-image-container">
+        <a href="{{ page.permalink | safe }}">
+            {% set image = resize_image(path=page.extra.thumbnail, width=400, op='fit_width') %}
+            <span class="talk-image" style="background-image: url('{{ image.url }}')"> </span>
+        </a>
+    </div>
+    <div class="talk-text">
+        <h2>
+        <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+        </h2>
+
+        <p>
+            <span class="talk-venue", style="white-space: nowrap">({{ page.date | date(format="%Y-%m-%d")}} &#8211; {{ page.extra.venue }})</span>
+        </p>
+    </div>
+</div>
+
+<!--<hr>-->
+{% endfor %}
+{% endblock content %}
+
+{% block title %}
+Talks
+{% endblock title %}
