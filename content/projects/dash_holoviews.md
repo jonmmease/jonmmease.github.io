@@ -8,7 +8,6 @@ github = "https://github.com/holoviz/holoviews"
 youtube = "D8xwJVbUOH8"
 website = "https://dash.plotly.com/holoviews"
 post = "https://medium.com/plotly/introducing-dash-holoviews-6a05c088ebe5"
-featured = true
 +++
 
 I developed the majority of the Plotly backend for the HoloViews Python library.
