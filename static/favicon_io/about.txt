@@ -1,10 +1,10 @@
 Generated with https://favicon.io/favicon-generator/
 
 Initials: JM
-Font Size: 80
+Font Size: 76
 background color: #1A237E (Indigo 900)
 font color: #FAFAFA (Grey 50)
-font: Dosis 600
+font: Outfit 400
 
 
 This favicon was generated using the following font:
