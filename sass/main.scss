@@ -18,9 +18,10 @@ $subdued-font: #607d8b; // Blue Grey 500
 
 /* Basic */
 html {
-  font-family: "Dosis", sans-serif;
+  font-family: "Outfit", sans-serif;
   text-rendering: optimizeLegibility;
   font-size: 1.1em;
+  font-weight: 300;
 
   color: $default-text-color;
   background-color: $background-color;
@@ -49,7 +50,7 @@ body {
 
 .navbar-item {
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.2em;
   color: $light-font;
 
@@ -82,7 +83,7 @@ a:active {
 h1, h2, h3, h4, h5, h6 {
   margin-left: 16px;
   color: $heading-color;
-  font-weight: 500;
+  font-weight: 400;
   //font-weight: normal;
 }
 
@@ -97,10 +98,9 @@ h1 {
   font-size: 1.35em;
 }
 
-//h2 {
-//  font-weight: normal;
-//  font-size: 1.2em;
-//}
+h2 {
+  font-size: 1.2em;
+}
 
 h3 {
   font-size: 1em;
@@ -254,7 +254,7 @@ header {
 
 .date {
   color: $subdued-font;
-  font-weight: 300;
+  font-weight: 200;
   white-space: nowrap;
 }
 
@@ -298,7 +298,7 @@ header {
   margin-left: 16px;
   //margin-top: 0px;
   font-size: 1.3em;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .blog-page-title {
@@ -318,6 +318,7 @@ header {
 .blog-date {
   margin-left: 16px;
   font-size: 1.2em;
+  font-weight: 200;
 }
 
 .blog-p {
@@ -422,7 +423,7 @@ header {
 }
 
 .social-table {
-  margin-left: 30px;
+  margin-left: 26px;
   width: $profile-photo-size;
   font-size: 0.9em;
 }
@@ -450,7 +451,7 @@ header {
 .featured-project-title {
   margin: 0 0 8px 16px;
   font-size: 1.2em;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 
@@ -508,9 +509,7 @@ header {
   }
 
   h1 {
-    //color: red;
-    font-size: x-large;
-    font-weight: 600;
+    font-weight: 500;
     color: #000;
   }
 
@@ -519,7 +518,7 @@ header {
     color: #444;
     //font-size: larger;
     margin-left: 32px;
-    font-weight: 500;
+    font-weight: 400;
     //font-weight: normal;
   }
 
