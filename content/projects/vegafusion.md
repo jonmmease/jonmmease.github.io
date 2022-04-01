@@ -6,6 +6,7 @@ weight =  9
 thumbnail = "/projects/vegafusion_logo.png"
 github = "https://github.com/vegafusion/vegafusion"
 website = "https://vegafusion.io"
+post = "https://medium.com/@jonmmease/announcing-vegafusion-570f62207ba7"
 featured = true
 +++
 
