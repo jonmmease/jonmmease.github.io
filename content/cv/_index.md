@@ -9,13 +9,17 @@ technical domains, algorithm families, programming languages, data visualization
 techniques, and data science technologies.
 
 I care deeply about the future of the open data science technology ecosystem,
-I’m a contributor to a variety of open source data science projects, and I was
-previously the Chief Scientist at Plotly.
+I’m a contributor to a variety of open source data science projects.
 
 # Work Experience
 
+## Hex Technologies
+**VegaFusion Maintainer and Visualization Engineer** <span class="date">&nbsp;&nbsp; October 2022 - present</span>
+
+Maintainer of the VegaFusion project and contributor to the Hex visualization stack.
+
 ## The Johns Hopkins University Applied Physics Laboratory
-**Data Scientist and Software Developer** <span class="date">&nbsp;&nbsp; August 2009 - present</span>
+**Data Scientist and Software Developer** <span class="date">&nbsp;&nbsp; August 2009 - October 2022</span>
 
 Responsibilities include introducing and building Open Data Science competency
 within the group through research, development, training, and open source engagement.
@@ -33,7 +37,7 @@ plotly's open source portfolio.
 Open source maintainer and lead developer for plotly.py, 
 the Plotly Python data visualization library. 
 
-## Anaconda, Inc.
+## Anaconda
 
 **Open Source Developer** <span class="date"> &nbsp;&nbsp; June 2019 – February 2020</date>
 
@@ -62,6 +66,8 @@ Bachelor of Arts: Physics, Millersville University, Pennsylvania
 Bachelor of Science: Mathematics, Millersville University, Pennsylvania
 
 # Publications
+N. Kruchten, J. Mease and D. Moritz, “VegaFusion: Automatic Server-Side Scaling for Interactive Vega Visualizations,” 2022 IEEE Visualization and Visual Analytics (VIS), Oklahoma City, OK, USA, 2022, pp. 11-15, doi: 10.1109/VIS54862.2022.00011.
+
 Mease, J. M. (2018). Bringing ipywidgets Support to plotly.py. Proceedings of the 
 17th Python in Science Conference.
 
