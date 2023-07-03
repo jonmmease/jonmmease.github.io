@@ -6,6 +6,7 @@ venue = "PyData Seattle 2023"
 website = "https://seattle2023.pydata.org/cfp/talk/JFP7PR/"
 youtube = "8vI0o8CuhLI"
 thumbnail = "/talks/PyDataSeattle2023-VegaFusion.png"
+featured = true
 +++
 
 ## Description

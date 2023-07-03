@@ -9,7 +9,7 @@ website = "https://plotly.com/python/figurewidget/"
 post = "https://medium.com/plotly/introducing-plotly-py-3-0-0-7bb1333f69c6"
 paper = "http://conference.scipy.org/proceedings/scipy2018/jon_mease.html"
 youtube = "https://www.youtube.com/watch?v=1ndo6C1KWjI"
-featured = true
+featured = false
 +++
 
 I developed FigureWidget, which integrates Jupyter Widgets functionality into the core
