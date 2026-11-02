@@ -6,10 +6,10 @@ weight =  10
 thumbnail = "/projects/vl_convert_logo.png"
 github = "https://github.com/vega/vl-convert"
 post = "https://medium.com/@jonmmease/introducing-vlconvert-c763f0076e89"
-website = "https://altair-viz.github.io/user_guide/saving_charts.html#vl-convert"
+website = "https://vega.github.io/vl-convert/2.0.0-rc7/"
 featured = true
 +++
 
-I created VlConvert, which converts Vega-Lite specifications to Vega, SVG, and PNG. VlConvert was made the default static image export engine in Altair 5.
+VlConvert converts Vega-Lite and Vega chart specifications to a variety of static and interactive formats including SVG, PNG, PDF, HTML, and more. It also converts Vega-Lite to Vega.
 
 <!-- more -->
